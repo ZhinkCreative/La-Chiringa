@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<title>La Chiringa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url'/w3images/onepage_restaurant.jpg';
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('chiringa').style.display='block'" class="w3-button w3-black">La Chiringa</button></p>    
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-orange">Desayunos</button></p>
+    <p><button onclick="document.getElementById('menu10').style.display='block'" class="w3-button w3-orange">Sandwiches Especiales</button></p>  
+    <p><button onclick="document.getElementById('menu11').style.display='block'" class="w3-button w3-orange">Bowl de Yogurt</button></p>
+    <p><button onclick="document.getElementById('cafeteria').style.display='block'" class="w3-button w3-orange">Cafetería</button></p>
+    <p><button onclick="document.getElementById('frios').style.display='block'" class="w3-button w3-orange">Cafés y Tés frios</button></p>
+    <p><button onclick="document.getElementById('zumos').style.display='block'" class="w3-button w3-orange">Zumos Naturales</button></p>
+    <p><button onclick="document.getElementById('menu2').style.display='block'" class="w3-button w3-orange">Sorbetes</button></p>
+    <p><button onclick="document.getElementById('menu3').style.display='block'" class="w3-button w3-orange">Tetería</button></p>  
+    <p><button onclick="document.getElementById('menu4').style.display='block'" class="w3-button w3-orange">Crepes Dulces</button></p>  
+    <p><button onclick="document.getElementById('menu5').style.display='block'" class="w3-button w3-orange">Bebidas</button></p>  
+    <p><button onclick="document.getElementById('menu6').style.display='block'" class="w3-button w3-orange">Licores</button></p>  
+    <p><button onclick="document.getElementById('menu7').style.display='block'" class="w3-button w3-orange">Cervezas del Mundo</button></p>  
+    <p><button onclick="document.getElementById('menu8').style.display='block'" class="w3-button w3-orange">Ginebras</button></p>  
+    <p><button onclick="document.getElementById('menu9').style.display='block'" class="w3-button w3-orange">Coctelería</button></p>   
+    <br><br><br><br>
+   </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge"></p>
+    <p class="w3-large"></p>
+  </div>
+</div>
+
+<!-- Menu Chiringa -->
+<div id="chiringa" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('chiringa').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>La Chiringa</h1>
+    </div>
+    <div class="w3-container">
+        <h4><b>MANTENGA LAS DISTANCIAS DE SEGURIDAD</b></h4>
+        <h5>En nuestras instalaciones realizamos un protocolo de limpieza y desinfección constante, siguiendo las recomendaciones de las autoridades sanitarias. </h5>
+        <br>
+    </div>
+   </div>
+</div>
+
+<!-- Menu Desayunos -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Pitufos</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Aceite <b>1.20 €</b></h5>
+        <h5>Tomate <b>1.30 €</b></h5>
+        <h5>Mantequilla <b>1.40 €</b></h5>
+        <h5>Mantequilla y mermelada <b>1.60 €</b></h5>
+        <h5>Aguacate <b>2.00 €</b></h5>
+        <h5>Jamón Serrano <b>1.80 €</b></h5>
+        <h5>Jamón Cocido/Pavo <b>1.80 €</b></h5>
+        <h5>Bacon <b>2.00 €</b></h5>
+        <h5>Queso Manchego o Fresco <b>2.00 €</b></h5>
+        <h5>Salchichón de Málaga <b>2.00 €</b></h5>
+        <h5>Lomo al Horno <b>2.20 €</b></h5>
+        <h5>Melva Canutera <b>2.20 €</b></h5>
+        <h5>Salmón Ahumado <b>2.20 €</b></h5>
+        <h5>Huevo frito o Revuelto <b>2.00 €</b></h5>
+        <h5>Catalana (Tomate y jamón Serrano) <b>2.00 €</b></h5>
+        <h5>Catalana de Manchego o Fresco <b>2.20 €</b></h5>
+        <h5>Catalana de Salchichón <b>2.20 €</b></h5>
+        <h5>Catalana de Lomo <b>2.40 €</b></h5>
+        <h5>Catalana de Melva <b>2.40 €</b></h5>
+        <h5>Paté Ibérico <b>1.80 €</b></h5>
+        <h5>Sobrasada <b>1.80 €</b></h5>
+        <h5>Zurrapa <b>1.80 €</b></h5>
+        <h5>Mixto (jamón cocido y queso) <b>2.20 €</b></h5>
+        <h5>Sandwich mixto XXL <b>2.80 €</b></h5>
+        
+        <h5>Extra de mantequilla/mermelada/mayonesa<br>/tomate <b>0.20 €</b></h5>
+        <h5>Extra de queso <b>0.70 €</b></h5>
+        <h5>Extra de aguacate/huevo <b>1.00 €</b></h5>
+        <h5>Extra vegetal (lechuga, tomate y mayonesa) <b>1.00 €</b></h5>
+        
+    </div>
+    <div class="w3-container w3-orange">
+      <h1>Panes</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Integral <b>= Pitufo</b></h5>
+        <h5>Soja o Multicereal <b>= Pitufo<br> + 0.20 €</b></h5>
+        <h5>Viena o Mollete <b>= Pitufo<br> + 0.50 €</b></h5>
+        <h5>Croisant o centeno <b>= Pitufo<br> + 0.50 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+<!-- Menu10 Sandwiches especiales -->
+<div id="menu10" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu2').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Sandwiches Especiales</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Bacon, queso, huevo frito y mayonesa <b>3.50 €</b></h5>
+        <h5>Salmón, philadelphia, aguacate y espinaca baby <b>4.00 €</b></h5>
+        <h5>Jamón cocido, queso, brotes tiernos, huevo frito, tomate y mayonesa <b>4.00 €</b></h5>
+        <br>
+    </div>
+  </div>
+</div>
+    
+    <!-- Menu11 Bowl de Yogurt -->
+<div id="menu11" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu2').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Bowl de Yogurt</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Yogurt griego con mix de cereales y semillas <b>4.00 €</b></h5>
+        <h5>Extra de frutas <b>1.20 €</b></h5>
+        <br>
+    </div>
+  </div>
+</div>
+    
+    <!-- Menu2 Sorbetes -->
+<div id="menu2" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu2').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Sorbetes</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Limón y hierbabuena <b>4.50 €</b></h5>
+        <h5>Naranja natural <b>4.50 €</b></h5>
+        <h5>Cava y helado <b>6.50 €</b></h5>
+        <br>
+    </div>
+  </div>
+</div>    
+    
+    <!-- Menu Cafe -->
+<div id="cafeteria" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('cafeteria').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Cafetería</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Café solo <b>1.30 €</b></h5>
+        <h5>Café doble <b>1.40 €</b></h5>
+        <h5>Café bombón <b>1.90 €</b></h5>
+        <p class="w3-text-grey">Café solo con leche condensada.</p>
+        <h5>Capuchino <b>2.20 €</b></h5>
+        <p class="w3-text-grey">Café doble con espuma de leche.</p>
+        <h5>Capuchino ESPECIAL <b>3.00 €</b></h5>
+        <p class="w3-text-grey">Café doble con espuma de leche, nata montada y canela.</p>
+        <h5>Café Irlandés 3 colores <b>5.00 €</b></h5>
+        <p class="w3-text-grey">Café doble,whisky, nata montada y canela.</p>
+        <h5>Café de Kingston 4 colores <b>5.00 €</b></h5>
+        <p class="w3-text-grey">Café doble,licor 43, leche condensada y espuma de leche.</p>
+        <h5>Cubanito <b>5.00 €</b></h5>
+        <p class="w3-text-grey">Café doble,ron añejo, nata montada y azúcar moreno.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
+    </div>
+    <div class="w3-container w3-orange">
+      <h1>Cafés Especiales</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Kalahary <b>2.00 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con piel de limón y naranja.</p>
+        <h5>Marrakesh <b>2.00 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con hierbabuena y anis estrellado.</p>
+        <h5>Estambul <b>2.00 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con enebro y cardomomo.</p>
+        <h5>Nazarí <b>2.00 €</b></h5>
+        <p class="w3-text-grey">Café solo aromatizado con canela y piel de naranja.</p>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Crepes -->
+<div id="menu4" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu4').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Crepes dulces</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Azúcar y limón <b>3.20 €</b></h5>
+        <h5>Mermeladas varias <b>3.50 €</b></h5>
+        <p class="w3-text-grey">(a elección)</p>
+        <h5>Miel <b>3.50 €</b></h5>
+        <p class="w3-text-grey">de caña o mil flores.</p>
+        <h5>Chocolate <b>3.50 €</b></h5>
+        <h5>Nocilla <b>3.50 €</b></h5>
+        <h5>Dulce de leche <b>3.50 €</b></h5>
+        <h5>Bananita Dolca <b>4.20 €</b></h5>
+        <p class="w3-text-grey">Plátano y chocolate.</p>
+        <h5>Banana Split <b>4.20 €</b></h5>
+        <p class="w3-text-grey">Plátano,dulce de leche y nueces.</p>
+        <h5>Bola de nieve <b>4.80 €</b></h5>
+        <p class="w3-text-grey">Chocolate,ralladura de coco y helado de vainilla.</p>
+        <h5>Don Pedro <b>5.00 €</b></h5>
+        <p class="w3-text-grey">Centro de helado de vainilla,nueces,nata montada y whisky.</p>
+        <h5>Suplemento bola de helado extra <b>1.50 €</b></h5>
+        <h5>Suplemento nata montada <b>1.00 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+   
+    <!-- Menu Bebidas -->
+<div id="menu5" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu5').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Bebidas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Agua mineral <b>1.20 €</b></h5>
+        <h5>Refrescos <b>2.20 €</b></h5>
+        <h5>Zumos y batidos envasados <b>2.20 €</b></h5>
+        <h5>Tinto de verano <b>2.00 €</b></h5>
+        <h5>Caña Cruzcampo <b>1.90 €</b></h5>
+        <h5>Cruzcampo 1/3 <b>2.50 €</b></h5>
+        <h5>Rioja copa <b>2.80 €</b></h5>
+        <h5>Rioja crianza copa <b>3.00 €</b></h5>
+        <h5>Ribera del Duero copa <b>3.00 €</b></h5>
+        <h5>Malbec Argentino copa <b>3.00 €</b></h5>
+        <h5>Blanco copa <b>3.00 €</b></h5>
+        <h5>Manzanilla - Fino <b>2.80 €</b></h5>
+        <h5>Sangría ESPECIAL (jarra 1 Lt.) <b>16.00 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Licores -->
+<div id="menu6" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu6').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Licores</h1>
+      <h3><p class="w3-text-white">Combinados.</p></h3>    
+    </div>
+    <div class="w3-container">
+        <h5>J&B <b>5.50 €</b></h5>
+        <h5>Cutty Sark <b>5.50 €</b></h5>
+        <h5>White Label <b>5.50 €</b></h5>
+        <h5>Ballantines <b>5.50 €</b></h5>
+        <h5>Dyc8 <b>5.50 €</b></h5>
+        <h5>Jack Daniel’s <b>7.50 €</b></h5>
+        <h5>Cardhú <b>9.50 €</b></h5>
+        <h5>Johnnie Walker E. Negra <b>9.50 €</b></h5>
+        <h5>Chivas <b>9.50 €</b></h5>
+        <h5>Cacique <b>5.50 €</b></h5>
+        <h5>Brugal <b>5.50 €</b></h5>
+        <h5>Bacardi <b>5.50 €</b></h5>
+        <h5>Barcelo <b>5.50 €</b></h5>
+        <h5>Havana 5 <b>5.50 €</b></h5>
+        <h5>Pampero <b>5.50 €</b></h5>
+        <h5>Havana 7 <b>6.50 €</b></h5>
+        <h5>Legendario Elixir <b>6.50 €</b></h5>
+        <h5>Matusalem 7 <b>6.50 €</b></h5>
+        <h5>Bacardi elixir <b>6.50 €</b></h5>
+        <h5>Santa Teresa <b>6.50 €</b></h5>
+        <h5>Flor de Caña 7 <b>6.50 €</b></h5>
+        <h5>Cacique 500 <b>7.50 €</b></h5>
+        <h5>Pampero aniversario <b>7.50 €</b></h5>
+        <h5>Matusalem 15 <b>7.50 €</b></h5>
+        <h5>Ron Zacapa 23 años Gran Solera <b>11.00 €</b></h5>
+        <h5>Larios <b>5.50 €</b></h5>
+        <h5>Beefeater <b>5.50 €</b></h5>
+        <h5>Tanqueray <b>5.50 €</b></h5>
+        <h5>Bayley’s <b>4.00 €</b></h5>
+        <h5>Frangelico <b>4.00 €</b></h5>
+        <h5>Tia Maria <b>4.00 €</b></h5>
+        <h5>Barceló Cream <b>4.00 €</b></h5>
+        <h5>Pacharán Zoco <b>3.50 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Cervezas del mundo -->
+<div id="menu7" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu7').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Cervezas del Mundo</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Budweiser <b>3.30 €</b></h5><p class="w3-text-grey">Lager E.E.U.U..</p>
+        <h5>Coronita <b>3.30 €</b></h5><p class="w3-text-grey">Pilsener Méjico.</p>
+        <h5>Desperados <b>3.30 €</b></h5><p class="w3-text-grey">Pilsener Francia.</p>
+        <h5>Franciscaner 1/2 Lt. <b>4.00 €</b></h5><p class="w3-text-grey">Trigo Alemania.</p>
+        <h5>Guinness <b>3.30 €</b></h5><p class="w3-text-grey">Dry Stout Irlanda.</p>
+        <h5>Heineken <b>2.70 €</b></h5><p class="w3-text-grey">Lager pilsner Holanda.</p>
+        <h5>Judas <b>3.30 €</b></h5><p class="w3-text-grey">Ale Bélgica.</p>
+        <h5>Leffe blonde <b>9.50 €</b></h5><p class="w3-text-grey">Abadia Bélgica.</p>
+        <h5>Leffe brune <b>3.30 €</b></h5><p class="w3-text-grey">Abadia Bélgica.</p>
+        <h5>Legado de Yuste <b>3.30 €</b></h5><p class="w3-text-grey">Abadia Cáceres.</p>
+        <h5>Paulaner 1/2 Lt. <b>4.00 €</b></h5><p class="w3-text-grey">Trigo Alemania.</p>
+        <h5>Pilsner Urquell <b>3.30 €</b></h5><p class="w3-text-grey">Pilsner Checa.</p>
+        <h5>Quilmes <b>3.30 €</b></h5><p class="w3-text-grey">Lager Argentina.</p>
+        <h5>Stella Artoise <b>3.30 €</b></h5><p class="w3-text-grey">Lager Bélgica.</p>
+        </div>
+    <div class="w3-container w3-orange">
+      <h1>Nuestras Reservas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Alhambra 1925 Reserva <b>3.00 €</b></h5><p class="w3-text-grey">de sabor intenso y esponjoso,de color ambar dorado.6,4 %.</p>
+        <h5>Cruzcampo 1904 Gran reserva <b>3.00 €</b></h5><p class="w3-text-grey">lager tostada100%,sabor intenso y espumosa.6,4%.</p>
+        <h5>Estrella Galicia 1906 Reserva <b>3.00 €</b></h5><p class="w3-text-grey">levemente amarga y poca espuma,de color ámbar.6,5%.</p>
+        <h5>Red Vintage  Extra especial <b>3.00 €</b></h5><p class="w3-text-grey">aroma a malta,espumosa y de color dorado.8,00%.</p>
+        </div>
+    <div class="w3-container w3-orange">
+      <h1>Nuestras Artesanas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Bobastro Golden Ale Málaga <b>3.80 €</b></h5><p class="w3-text-grey">color oro,muy refrescante de alta fermentación.4,5%.</p>
+        <h5>Dr. Calypso Half *IPA Barcelona <b>3.80 €</b></h5><p class="w3-text-grey">suave y afrutada,de color dorado.5,2%   GLUTEN FREE.</p>
+        <h5>Er Boqueón Golden Ale Valencia <b>3.80 €</b></h5><p class="w3-text-grey">fresca rubia,elaborada con agua de mar.4,8%.</p>
+        <h5>Jack the Ripa Real *IPA Barcelona <b>3.80 €</b></h5><p class="w3-text-grey">suave sabor a lúpulo,espumosa y de color tostado.5,6%.</p>
+        <h5>La Axarca Tropical Ale Málaga <b>3.80 €</b></h5><p class="w3-text-grey">aroma a malta,espumosa y de color dorado.8,00%.</p>
+        <h5>Ninfa Triple Stouts Toledo <b>3.80 €</b></h5><p class="w3-text-grey">intensa y oscura,sabores café,moka y caramelo.8,5%.</p>
+        <h5>Turón *IPA Málaga <b>3.80 €</b></h5><p class="w3-text-grey">equilibrio de tonos amargos y citricos 6.2%.</p>
+        <h5>Viakrusis American *IPA Barcelona <b>3.80 €</b></h5><p class="w3-text-grey">buen cuerpo,equilibrio final amargo y seco.6,00%.</p>
+        <h5>3.0 Hoppy Weizen Toledo <b>3.80 €</b></h5><p class="w3-text-grey">de trigo,fresca,afrutada y amarga,color dorado.5,5%.</p>
+        <h5><b>*IPA</b> India Pale Ale <br> <b>*APA</b> American Pale Ale </h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Teteria -->
+<div id="menu3" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu3').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Tés Negros</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Ceylán <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Puro té de Sri Lanka . Agua o Leche.</p>
+        <h5>Pakistaní <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Con canela, clavo y cardomomo. Agua o Leche.</p>
+        <h5>Ruta de la seda <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Rosas, manzana, canela, almendra,vainilla y cítricos.Agua o Leche.</p>
+        <h5>Jazmín <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Hojas chinas con flores de Jazmín y delicada fragancia.</p>
+        <h5>Medina Azahara <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té indio, cáscara de limón,clavo, pétalos de flores,almendra y vainilla.</p>
+        <h5>Mil flores <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té de Ceylán e India, aromas de frutos tropicales, cáscara de limón,clavo, pétalos de flores,almendra y vainilla.</p>
+        <h5>Toffe <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Mezcla de tés de Ceylán, trozos de Toffe, vainilla y aromade nata. Leche.</p>
+        <h5>Chai Malayo <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Con malva, lavanda, pétalos de rosas y aroma natural.</p>
+        <h5>Americano <b>3.20 €</b></h5>
+        <p class="w3-text-grey">Té de Ceylán, canela, cáscara de limón y naranja, Licor 43.Leche.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
+    </div>
+    <div class="w3-container w3-orange">
+      <h1>Tés verdes</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Moruno <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té verde enriquecido con hierbabuena.</p>
+        <h5>Tunecino <b>3.00 €</b></h5>
+        <p class="w3-text-grey">Té verde con hierbabuena y piñones.</p>
+        <h5>Mil y una noches <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Mezcla de té verde y negro, melocotón y pétalos de rosa.</p>
+        <h5>Noche árabe <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Mezcla de tés verde y  negro con aroma a naranjay hojas de Azahar.</p>
+        <h5>Ginseng <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té de Formosa enriquecido con  Ginseng.</p>
+        <h5>Sueño de la Alhambra <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té de Yunnan, banana, manzana y naranja.</p>
+        <h5>Jardín Secreto <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té verde chino y té negro, Flores de Jazmín y vainilla.</p>
+        <h5>Suplemento HIELO / LECHE SIN LACTOSA <b>0.10 €</b></h5>
+    </div>
+      <div class="w3-container w3-orange">
+      <h1>Tés Roibos</h1>
+      <h3><p class="w3-text-white">Té africano SIN TEÍNA.</p></h3>     
+    </div>
+    <div class="w3-container">
+      <h5>Aires de África <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Roitea,cacao,,almendra y aroma natural de whisky.</p>
+        <h5>Amanecer africano <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Rooibos con trozos de chocolate y vainilla Bourbon.</p>
+        <h5>Frutos rojos <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Roitea de grosella negra,fresas,arándanos y cerezas.</p>
+        <h5>Desierto mágico <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Rooibos con limón grass,naranja,piña,hierba luisa y caléndula.</p>
+        <h5>Suplemento HECHO EN LECHE <b>0.10 €</b></h5>
+     </div>
+      <div class="w3-container w3-orange">
+      <h1>Otros Tés</h1>
+      </div>
+    <div class="w3-container">
+        <h5>Té Rojo <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Clásico té chino de Puh Erh, depurativo y adelgazante.</p>
+        <h5>Té Blanco <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Té chino PAI MU TAN de hoja larga y tintura muy clara.</p>
+        <h5>De Frutas <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Naranja y piña / Fresa / Plátano / Mango / Baya Salvaje.</p>
+        <h5>Infusiones Naturales <b>2.50 €</b></h5>
+        <p class="w3-text-grey">Manzanilla / Menta Poleo / Tila.</p>
+        <h5>Suplemento HECHO EN LECHE <b>0.10 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu frios -->
+<div id="frios" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('frios').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Cafés Frappés</h1>
+        <h3><p class="w3-text-white">Café con hielo picado batido.</p></h3>
+    </div>
+     <div class="w3-container">
+        <h5>Café Frappé <b>2.20 €</b></h5>
+        <p class="w3-text-grey">Café recién hecho.</p> 
+        <h5>Café Bayley’s Frappé <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con Bayley’s.</p> 
+        <h5>Capuchino Frappé <b>3,50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con nata montada y canela.</p>
+        <h5>Claroscuro <b>3.80 €</b></h5>
+        <p class="w3-text-grey">Café frappé con helado de vainilla.</p>
+        <h5>Old Peter <b>4.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con whisky,helado de vainilla y nueces.</p>
+        <h5>Fidel <b>4.50 €</b></h5>
+        <p class="w3-text-grey">Café frappé con ron añejo y helado de chocolate.</p>
+     </div>
+    <div class="w3-container w3-orange">
+      <h1>Tés Frappés</h1>
+        <h3><p class="w3-text-white">Té con hielo picado batido.</p></h3>
+    </div>
+    <div class="w3-container">
+      <h5>Té del Riff <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té moruno con hierbabuena.</p>
+        <h5>Té del Bosque <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té rooibos frutos rojos con frutas del bosque.</p>
+        <h5>Té Canario <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té negro de plátano con fruta natural.</p>
+        <h5>Té del Trópico <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Infusión de naranja y piña con fruta natural.</p>
+        <h5>Té de Kachemira <b>3.50 €</b></h5>
+        <p class="w3-text-grey">Té pakistaní con leche y canela.</p>
+        <br>
+    </div>
+   </div>
+</div>
+
+<!-- Menu zumos -->
+<div id="zumos" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('zumos').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Zumos Naturales</h1>
+        <h3><p class="w3-text-white">De frutas naturales según temporada.</p></h3>
+    </div>
+     <div class="w3-container">
+        <h5>Fresa </h5>
+         <h5>Frutas del bosque </h5>
+         <h5>Kiwi </h5>
+         <h5>Mandarina </h5>
+         <h5>Mango </h5>
+         <h5>Jengibre </h5>
+         <h5>Melón </h5>
+         <h5>Naranja </h5>
+         <h5>Papaya </h5>
+         <h5>Piña </h5>
+         <h5>Platano </h5>
+         <h5>Sandía </h5>
+         <h5>Manzana </h5>
+         <p class="w3-text-grey">Puedes combinar las frutas que quieras.</p>
+         
+         <h5>2 frutas con agua (500cl.) <b>4.50 €</b></h5>
+         <h5>2 frutas con leche (500cl.) <b>5.00 €</b></h5>
+         <h5>2 frutas con yogurt (500cl.) <b>5.50 €</b></h5>
+         <h5>Zumo de naranja solo (tubo) <b>2.70 €</b></h5>
+         <h5>Fruta extra <b>1.20 €</b></h5>
+         <br>
+     </div>
+  </div>
+</div>    
+    
+    
+<!-- Menu Ginebras -->
+<div id="menu8" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu8').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Ginebras</h1>
+        <h3><p class="w3-text-white">*Combinadas con Schweppes/Nordic Mist ó Nordic Blue.</p></h3>
+    </div>
+     <div class="w3-container">
+         <h5>Larios 12 <b>6.00 €</b></h5>
+         <h5>Seagrams <b>6.00 €</b></h5>
+         <h5>Bombay Sapphire <b>6.00 €</b></h5>
+         <h5>Bulldog <b>6.50 €</b></h5>
+         <h5>Fifty Pounds <b>6.50 €</b></h5>
+         <h5>Bloom <b>6.50 €</b></h5>
+         <h5>Beefeater 24 <b>6.50 €</b></h5>
+         <h5>London Nº1 <b>7.00 €</b></h5>
+         <h5>Martin Millers <b>7.00 €</b></h5>
+         <h5>Tanqueray Rangpur <b>7.00 €</b></h5>
+         <h5>Hendri'x <b>7.50 €</b></h5>
+         <h5>Tanqueray Ten <b>7.50 €</b></h5>
+         <h5>Citadelle <b>7.50 €</b></h5>
+         <h5>Mare <b>8.00 €</b></h5>
+         <h5>Pink 47 <b>8.00 €</b></h5>
+         <h5>G'Vine <b>8.50 €</b></h5>
+         <br>
+    </div>
+    <div class="w3-container w3-orange">
+         <h1>Tónicas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Fentimans  <b>+ 1.00 €</b></h5>
+        <h5>Fever Tree <b>+ 1.00 €</b></h5>
+        <h5>Indi & Co <b>+ 1.00 €</b></h5>
+        <h5>Schweppes Premium  <b>+ 1.00 €</b></h5>
+        <br>
+      </div>
+   </div>
+</div>    
+    
+    <!-- Menu Cocteles -->
+<div id="menu9" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu9').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Cócteles</h1>
+    </div>
+     <div class="w3-container">
+         <h5>Mojito <b>6.00 €</b></h5>
+         <p class="w3-text-grey">Ron blanco y dorado, lima, azúcar y hierbabuena.</p>
+         <h5>Caipirinha <b>6.00 €</b></h5>
+         <p class="w3-text-grey">Cachaça, lima, azúcar y soda.</p>
+         <h5>Margarita frozen <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Tequila, cointreau, lima.</p>
+         <h5>Daiquiri frozen <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Ron blanco, cointreau y la fruta que elijas.</p>
+         <h5>Piña Colada <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Ron blanco,batida de coco, malibú y piña natural.</p>
+         <h5>Sex on the Beach <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Ginebra, zumo de arándanos y de naranja.</p>
+         <h5>Tequila Sunrise <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Tequila,cointreau, zumo de naranja y granadina.</p>
+         <h5>Blue Lagoon <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Vodka, blue curaçao y zumo de limón.</p>
+         <h5>Cosmopolytan <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Vodka, zumo de arándanos y de limón.</p>
+         <h5>Bahama Mama <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Ron blanco,licor de plátano, piña natural y granadina.</p>
+         <h5>Bloody Mary <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Vodka, zumo de tomate y sus salsas.</p>
+         <h5>Mojito de fruta <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Mojito tradicional y LA FRUTA QUE ELIJAS.</p>
+         <h5>Caipirinha de fruta <b>6.50 €</b></h5>
+         <p class="w3-text-grey">Caipirinha tradicional y LA FRUTA QUE ELIJAS.</p>
+         <br>
+    </div>
+    <div class="w3-container w3-orange">
+         <h1>Sin Alcohol</h1>
+    </div>
+    <div class="w3-container">
+        <h5>San Francisco  <b>4,50 €</b></h5>
+        <p class="w3-text-grey">Zumo de naranja, piña, melocotón y granadina.</p>
+        <h5>Mojito SIN <b>5,00 €</b></h5>
+        <p class="w3-text-grey">Soda, lima, azúcar y hierbabuena.</p>
+        <h5>Piña Colada SIN <b>5.00 €</b></h5>
+        <p class="w3-text-grey">Batida de coco SIN, piña natural y azúcar.</p>
+        <br>
+      </div>
+      <div class="w3-container w3-orange">
+         <h1>TALLAS GRANDES</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Mojito XL 1,5 Litros  <b>19.00 €</b></h5>
+        <h5>Caipirinha XL 1,5 Litros <b>19.00 €</b></h5>
+        <h5>Daiquiri XL <b>21.00 €</b></h5>
+        <h5>Mojito SUPER XL 5 Litros <b>Consulta</b></h5>
+        <br>
+      </div>
+   </div>
+</div>
+
+</body>
+</html>
+
